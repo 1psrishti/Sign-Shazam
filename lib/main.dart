@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:translator/translator.dart';
+import 'dart:async';
 
 void main() {
   runApp(MyApp());

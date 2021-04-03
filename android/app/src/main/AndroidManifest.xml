@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.trial_translator_app">
+    package="com.example.integration_app">
    <application
-        android:label="trial_translator_app"
+        android:label="integration_app"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

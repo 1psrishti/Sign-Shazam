@@ -27,13 +27,72 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
 
-  TextEditingController textController = new TextEditingController();
-  var translatedPhrase = "";
+  TextEditingController textEditingController = new TextEditingController();
+  var output = "";
 
   var translator = GoogleTranslator();
 
-  String valueChoose;
-  List listItem = ["Spanish", "French"];
+  String dropdownValue;
+  static const Map<String, String> lang = {
+    "Albanian": "af",
+    "Arabic": "ar",
+    "Bengali": "bn",
+    "Bulgarian": "bg",
+    "Chinese": "zh",
+    "Czech": "cs",
+    "Dutch": "nl",
+    "Filipino": "tl",
+    "Finnish": "fi",
+    "French": "fr",
+    "German": "de",
+    "Greek": "el",
+    "Gujarati": "gu",
+    "Hawaiian": "haw",
+    "Hindi": "hi",
+    "Hungarian": "hu",
+    "Indonesian": "id",
+    "Irish": "ga",
+    "Italian": "it",
+    "Japanese": "ja",
+    "Kannada": "kn",
+    "Korean": "ko",
+    "Latin": "la",
+    "Malayalam": "ml",
+    "Marathi": "mr",
+    "Mongolian": "mn",
+    "Burmese": "my",
+    "Nepali": "ne",
+    "Norwegian": "no",
+    "Oriya": "or",
+    "Persian": "fa",
+    "Polish": "pl",
+    "Portuguese ": "pt",
+    "Punjabi": "pa",
+    "Romanian": "ro",
+    "Russian": "ru",
+    "Serbian": "sr",
+    "Sinhalese": "si",
+    "Slovak": "sk",
+    "Somali": "so",
+    "Spanish": "es",
+    "Swedish": "sv",
+    "Tamil": "ta",
+    "Telugu": "te",
+    "Thai": "th",
+    "Turkish": "tr",
+    "Ukrainian": "uk",
+    "Urdu": "ur",
+    "Vietnamese": "vi",
+    "Welsh": "cy",
+  };
+
+  void trans() {
+    translator.translate(textEditingController.text, from:"en", to: "$dropdownValue").then((value) {
+      setState(() {
+        output = value.toString();
+      });
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -56,7 +115,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: Column(
                     children: [
                       TextField(
-                        controller: textController,
+                        controller: textEditingController,
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           color: Colors.white,
@@ -67,9 +126,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       MaterialButton(
                         onPressed: (){
                           setState(() {
-                            translator.translate(textController.text, from: "en", to: "es").then((t) {
-                              translatedPhrase = t.toString();
-                            });
+                            trans();
                           });
                         },
                         child: Text("Translate"),
@@ -78,18 +135,23 @@ class _MyHomePageState extends State<MyHomePage> {
                       SizedBox(height: 35),
                       DropdownButton(
                         hint: Text("Select language"),
-                          value: valueChoose,
-                          onChanged: (newValue){
-                            setState(() {
-                              valueChoose = newValue;
-                            });
+                        underline: Container(
+                          height: 2,
+                          color: Colors.white,
+                        ),
+                        value: dropdownValue,
+                        onChanged: (newValue){
+                          setState(() {
+                            dropdownValue = newValue;
+                          });
                           },
-                        items: listItem.map((valueItem){
-                          return DropdownMenuItem(
-                            value: valueItem,
-                          child: Text(valueItem),
+                        items: lang.map((string, value){
+                          return MapEntry(string, DropdownMenuItem<String>(
+                            value: value,
+                            child: Text(string),
+                          ),
                           );
-                        }).toList(),
+                        }).values.toList(),
                       ),
                     ],
                   ),
@@ -107,7 +169,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: Column(
                     children: [
                       Text(
-                        translatedPhrase,
+                        output.toString(),
                         style: TextStyle(
                           fontSize: 24,
                         ),

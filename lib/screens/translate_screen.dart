@@ -111,7 +111,7 @@ class _TranslateScreenState extends State<TranslateScreen> {
               child: Container(
                 width: double.infinity,
                 height: double.infinity,
-                color: Color(0xff375079),
+                color: Color(0xff8e1244),
                 child: Padding(
                   padding: EdgeInsets.all(40.0),
                   child: Column(

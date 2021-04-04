@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Sign Shazam',
       theme: ThemeData(
-        primaryColor: Color(0xff375079),
+        primaryColor: Color(0xff4a75e7),
       ),
       home: LandingPage(),
       // routes: {

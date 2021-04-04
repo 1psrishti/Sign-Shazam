@@ -123,7 +123,7 @@ class _TranslateScreenState extends State<TranslateScreen> {
                           fontSize: 24,
                         ),
                       ),
-                      SizedBox(height: 50),
+                      SizedBox(height: 70),
                       MaterialButton(
                         onPressed: (){
                           setState(() {

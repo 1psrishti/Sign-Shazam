@@ -8,19 +8,6 @@ Sign Shazam is an app that has been built for helping mute people and everyone e
 The app uses the mobile's camera to capture hand symbols and gestures, detects letters from the American Sign Language and converts it into text.
 The text can also be translated into different languages for ease in communication.
 
-### Sneak Peek &#128064;
-
-![](https://github.com/1psrishti/Sign-Shazam/blob/main/Screenshot/home.jpegraw=true)
-
-![](https://github.com/1psrishti/Sign-Shazam/blob/main/Screenshot/a.jpeg)
-
-![](https://github.com/1psrishti/Sign-Shazam/blob/main/Screenshot/c.jpeg)
-
-![](https://github.com/1psrishti/Sign-Shazam/blob/main/Screenshot/nothing.jpeg)
-
-![](https://github.com/1psrishti/Sign-Shazam/blob/main/Screenshot/translate.jpeg)
-
-
 ### Tech Stack &#128187;
 
 - Flutter, Android Studio

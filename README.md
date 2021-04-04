@@ -10,7 +10,7 @@ The text can also be translated into different languages for ease in communicati
 
 ### Sneak Peek &#128064;
 
-![](https://github.com/1psrishti/Sign-Shazam/blob/main/Screenshot/home.jpeg)
+![](https://github.com/1psrishti/Sign-Shazam/blob/main/Screenshot/home.jpegraw=true)
 
 ![](https://github.com/1psrishti/Sign-Shazam/blob/main/Screenshot/a.jpeg)
 
@@ -18,7 +18,7 @@ The text can also be translated into different languages for ease in communicati
 
 ![](https://github.com/1psrishti/Sign-Shazam/blob/main/Screenshot/nothing.jpeg)
 
-![](https://github.com/1psrishti/Sign-Shazam/blob/main/Screenshot/translate.jpg)
+![](https://github.com/1psrishti/Sign-Shazam/blob/main/Screenshot/translate.jpeg)
 
 
 ### Tech Stack &#128187;

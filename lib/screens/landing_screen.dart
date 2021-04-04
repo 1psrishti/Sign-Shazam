@@ -21,7 +21,7 @@ class _LandingPageState extends State<LandingPage> {
               child: Text(
                 "Welcome to",
                 style: TextStyle(
-                  color: Color(0xff878787),
+                  color: Color(0xFF575757),
                   fontSize: 25,
                   fontFamily: "Roboto",
                 ),
@@ -33,7 +33,7 @@ class _LandingPageState extends State<LandingPage> {
                 "Sign Shazam!\n",
                 textAlign: TextAlign.start,
                 style: TextStyle(
-                  color: Color(0xff375079),
+                  color: Color(0xff8e1244),
                   fontSize: 25,
                   fontFamily: "Roboto",
                   fontWeight: FontWeight.bold,
@@ -46,7 +46,7 @@ class _LandingPageState extends State<LandingPage> {
                 "This app uses \nTensorflow Lite to \ndetect alphabets \nfrom ASL.",
                 textAlign: TextAlign.justify,
                 style: TextStyle(
-                  color: Color(0xff878787),
+                  color: Color(0xFF575757),
                   fontSize: 25,
                   fontFamily: "Roboto",
                 ),
@@ -61,7 +61,7 @@ class _LandingPageState extends State<LandingPage> {
                 children: <Widget>[
                   Icon(
                     Icons.add_a_photo,
-                    color: Color(0xff375079),
+                    color: Color(0xff8e1244),
                     size: 30,
                   ),
                   SizedBox(width: MediaQuery.of(context).size.width * 0.05),
@@ -70,7 +70,7 @@ class _LandingPageState extends State<LandingPage> {
                     child: Text(
                       "Camera detects ASL alphabets \nusing Tensorflow model.",
                       style: TextStyle(
-                          color: Color(0xff375079),
+                          color: Color(0xff8e1244),
                           fontSize: 15,
                           fontFamily: "Roboto"),
                     ),
@@ -83,7 +83,7 @@ class _LandingPageState extends State<LandingPage> {
                 children: <Widget>[
                   Icon(
                     Icons.volume_up,
-                    color: Color(0xff375079),
+                    color: Color(0xff8e1244),
                     size: 30,
                   ),
                   SizedBox(width: MediaQuery.of(context).size.width * 0.05),
@@ -92,7 +92,7 @@ class _LandingPageState extends State<LandingPage> {
                     child: Text(
                       "Converts texts to speech\nwith a tap.",
                       style: TextStyle(
-                          color: Color(0xff375079),
+                          color: Color(0xff8e1244),
                           fontSize: 15,
                           fontFamily: "Roboto"),
                     ),
@@ -105,7 +105,7 @@ class _LandingPageState extends State<LandingPage> {
                 children: <Widget>[
                   Icon(
                     Icons.message,
-                    color: Color(0xff375079),
+                    color: Color(0xff8e1244),
                     size: 30,
                   ),
                   SizedBox(width: MediaQuery.of(context).size.width * 0.05),
@@ -114,7 +114,7 @@ class _LandingPageState extends State<LandingPage> {
                     child: Text(
                       "Easily form sentences and \ncommunicate with others.",
                       style: TextStyle(
-                          color: Color(0xff375079),
+                          color: Color(0xff8e1244),
                           fontSize: 15,
                           fontFamily: "Roboto"),
                     ),
@@ -127,7 +127,7 @@ class _LandingPageState extends State<LandingPage> {
                 children: <Widget>[
                   Icon(
                     Icons.translate,
-                    color: Color(0xff375079),
+                    color: Color(0xff8e1244),
                     size: 30,
                   ),
                   SizedBox(width: MediaQuery.of(context).size.width * 0.05),
@@ -136,7 +136,7 @@ class _LandingPageState extends State<LandingPage> {
                     child: Text(
                       "Translate sentences to almost \nany other language.",
                       style: TextStyle(
-                          color: Color(0xff375079),
+                          color: Color(0xff8e1244),
                           fontSize: 15,
                           fontFamily: "Roboto"),
                     ),
@@ -148,7 +148,7 @@ class _LandingPageState extends State<LandingPage> {
       floatingActionButton: Padding(
         padding: const EdgeInsets.all(28.0),
         child: FloatingActionButton(
-          backgroundColor: Color(0xff375079),
+          backgroundColor: Color(0xff8e1244),
           child: IconButton(
               icon: Icon(Icons.arrow_forward, color: Colors.white),
               onPressed: null),

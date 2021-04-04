@@ -127,7 +127,7 @@ class _DetectScreenState extends State<DetectScreen>
                         Text(textString,
                         style: TextStyle(
                           fontSize: 20,
-                          color: Color(0xff375079),
+                          color: Color(0xff8e1244),
                         ),
                         ),
                         SizedBox(height: 20,),
@@ -165,7 +165,7 @@ class _DetectScreenState extends State<DetectScreen>
                                 child: Icon(
                                   Icons.play_arrow,
                                   size: 40,
-                                  color: Color(0xff375079),
+                                  color: Color(0xff8e1244),
                                 ),
                               ),
                               FlatButton(
@@ -175,7 +175,7 @@ class _DetectScreenState extends State<DetectScreen>
                                 child: Icon(
                                   Icons.check,
                                   size: 40,
-                                  color: Color(0xff375079),
+                                  color: Color(0xff8e1244),
                                 ),
                               ),
                               FlatButton(
@@ -185,7 +185,7 @@ class _DetectScreenState extends State<DetectScreen>
                                 child: Icon(
                                   Icons.backspace,
                                   size: 40,
-                                  color: Color(0xff375079),
+                                  color: Color(0xff8e1244),
                                 ),
                               ),
                               FlatButton(
@@ -198,7 +198,7 @@ class _DetectScreenState extends State<DetectScreen>
                                 child: Icon(
                                   Icons.translate,
                                   size: 40,
-                                  color: Color(0xff375079),
+                                  color: Color(0xff8e1244),
                                 ),
                               ),
                             ],
